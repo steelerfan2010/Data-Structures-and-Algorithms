@@ -1,14 +1,17 @@
+import java.util.ArrayList;
+
 public class CompressedTrieNode {
 
 	String letters;
-	CompressedTrieNode[] kids;
+    ArrayList<CompressedTrieNode> kids = null;
 
 	public CompressedTrieNode() {
-		kids = new CompressedTrieNode[26];
+        this.kids = new ArrayList<CompressedTrieNode>();
 	}
 
 	public CompressedTrieNode(String letters) {
 		this.letters = letters;
+        this.kids = new ArrayList<CompressedTrieNode>();
 	}
 
 }
