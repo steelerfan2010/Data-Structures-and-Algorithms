@@ -5,6 +5,14 @@ public class LinkedList {
     public LinkedList() {
     }
 
+    public Node getHead() {
+	return head;
+    }
+
+    public void setHead(Node head) {
+	this.head = head;
+    }
+
     public void append(int value) {
         if(head == null) {
             head = new Node(value);
