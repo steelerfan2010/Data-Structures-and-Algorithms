@@ -2,10 +2,10 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] arr = {9,2,5,7,1,3,0,6};
-        printArr(arr);
-        lb();
+        Helper.printArr(arr);
+        Helper.lb();
         bubbleSort(arr);
-        printArr(arr);
+        Helper.printArr(arr);
     }
 
     public static void bubbleSort(int[] arr) {
@@ -18,17 +18,6 @@ public class BubbleSort {
                 }
             }
         }
-    }
-
-    public static void printArr(int[] arr) {
-        for(int i = 0; i < arr.length-1; i++) {
-            System.out.print(arr[i] + ",");
-        }
-        System.out.println(arr[arr.length-1]);
-    }
-
-    public static void lb() {
-        System.out.println("*************************");
     }
 
 }
